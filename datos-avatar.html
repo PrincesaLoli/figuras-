@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturar datos Avatar</title>
+    <link rel="stylesheet" href="css/style-avatar.css">
+</head>
+
+<body>
+    <div class="fila">
+        <div id="formulario">
+            <h2>informacion AvataR</h2>
+            <form action="#">
+                <label for="#">Nombres:</label>
+                <input type="text" id="cNombres" placeholder="Ej: Luis restrepo">
+                <label for="#">Edad</label>
+                <input type="number" id="cEdad" placeholder="Ej: 22">
+                <br>
+                <label for="#">Fecha de nacimiento</label>
+                <input type="date" id="cFecha">
+                <br>
+                <label for="#">Genero</label>
+                <select name="#" id="cGenero">
+                    <option value="">seleccionarr</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Otro">otro</option>
+                </select>
+                <br>
+                <label for="#">Email</label>
+                <input type="email" id="cEmail" placeholder="Ej: tucorreo@gmail.com">
+                <br>
+                <label for="#">Descripcion personalidad</label>
+                <textarea name="#" id="cDescripcion" cols="30" rows="4"></textarea>
+                <br>
+                <label for="#">Color</label>
+                <select name="#" id="cColor">
+                    <option value="">seleccionar...</option>
+                    <option value="pink">rosado</option>
+                    <option value="green">verde</option>
+                    <option value="blue">azul</option>
+                </select>
+                <button id="submit" onclick="capturarDatos()">Capturar datos</button>
+            </form>
+        </div>
+        <div id="card-avatar">
+            <h2>Avatar</h2>
+            <img id="foto" src="img/usuario1.jpg" alt="Avatar por defecto">
+            <p><b>Nombre:</b></p>
+            <p id="mNombres"></p>
+            <p><b>Edad:</b></p>
+            <p id="mEdad"></p>
+            <p><b>Fecha nacimiento:</b></p>
+            <p id="mFecha"></p>
+            <b>Genero:</b>
+            <p id="mGenero"></p>
+            <b>Email:</b>
+            <p id="mEmail"></p>
+            <b>Descripcion:</b>
+            <p id="mDescripcion"></p>
+        </div>
+    </div>
+
+    <a class="menu" href="datos-avatar.html">capturar Datos Avatar</a>
+
+    <script src="js/fuctions.js"></script>
+
+</body>
+
+</html>
